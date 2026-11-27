@@ -1,13 +1,13 @@
 from models.composant import Composant
-from abc import ABC 
+from abc import ABC, abstractmethod
 
 class Feuille(Composant, ABC):
-    
+
     def prix_total(self) -> float:
-            return self.prix
+        return self.prix
 
     def est_bundle(self) -> bool:
-        return False 
+        return False
 
     def nb_items(self) -> int:
-            return 1
+        return 1
