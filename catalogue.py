@@ -1,5 +1,6 @@
 import json
-from models import ProduitNumerique, Bundle
+from models.produit_numerique import ProduitNumerique
+from models.bundle import Bundle
 
 
 class Catalogue:
